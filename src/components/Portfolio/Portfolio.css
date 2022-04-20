@@ -1,0 +1,115 @@
+.portfolio {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border: 1px solid black;
+  font-family: "Poppins", sans-serif;
+}
+
+.portfolio-headings_container {
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  align-items: flex-end;
+  opacity: 0.5;
+}
+
+.portfolio-heading-num {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--font-hover-color);
+  margin-right: 0.5rem;
+}
+
+.portfolio-heading-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: var(--font-color);
+  text-transform: uppercase;
+}
+
+.portfolio-content-title {
+  padding: 1rem;
+}
+
+.portfolio h4 {
+  color: var(--font-hover-color);
+  font-size: 2rem;
+}
+
+.portfolio-content_container {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  height: 25vh;
+  z-index: 1;
+  background: var(--font-color);
+  border-radius: 1px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-description {
+  padding: 1rem;
+  color: var(--bg-color);
+}
+
+.portfolio-technologys {
+  color: var(--bg-color);
+  display: flex;
+  width: 80%;
+}
+
+.portfolio-link {
+  margin: 20px;
+}
+
+.portfolio-icon {
+  position: absolute;
+  bottom: 5px;
+  fill: var(--bg-color);
+}
+
+.icon-github {
+  left: 10px;
+}
+
+.icon-page {
+  left: 50px;
+}
+
+.portfolio-icon:hover {
+  fill: var(--font-hover-color);
+}
+
+.portfolio-img_container {
+  position: absolute;
+  width: 98vw;
+  min-height: 30vh;
+  top: 30vh;
+}
+
+.portfolio-img_container img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .portfolio {
+    height: 100vh;
+    padding: 5rem;
+  }
+}

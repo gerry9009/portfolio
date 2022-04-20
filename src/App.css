@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+:root {
+  --black-color: rgb(0, 0, 0);
+  --white-color: rgb(255, 255, 255);
+  --bg-color: #f1f1f1; /*#eaeaea*/
+  --font-color: #0d0d0d; /*#0d0d0d  or      #1a5e63*/
+  --font-hover-color: #4f8d60; /*#d9d9d9*/
+  --gray-color: rgb(153, 153, 153); /*rgb(153, 153, 153)*/
+  --lightgray-color: rgb(216, 216, 216);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: var(--bg-color);
+  min-width: 370px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* 
+Change Scrollbar Style
+*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--white-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--gray-color);
+  border: 1px solid var(--gray-color);
+  border-radius: 20px;
+  height: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--font-hover-color);
+  border: 1px solid var(--font-hover-color);
 }

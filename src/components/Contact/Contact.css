@@ -1,0 +1,157 @@
+.contact {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contact-container {
+  width: 80%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-social_icon {
+  fill: var(--font-color);
+  cursor: pointer;
+}
+
+.contact-social_icon:hover {
+  fill: var(--font-hover-color);
+}
+
+.contact-headline {
+  position: absolute;
+  top: 4rem;
+  left: 0.5rem;
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--font-hover-color);
+  opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: default;
+}
+
+.contact-title {
+  width: 100%;
+}
+
+.contact-title h5 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--font-hover-color);
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.contact-title p {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--font-color);
+  margin-bottom: 0.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.contact-form_name,
+.contact-form_email,
+.contact-form_message {
+  margin-bottom: 1rem;
+  border: 2px solid var(--font-color);
+  padding: 0.5rem;
+}
+
+.contact-form_message {
+  height: 10vh;
+  resize: none;
+}
+
+.contact-form_name:focus,
+.contact-form_email:focus,
+.contact-form_message:focus {
+  outline: none;
+  border: 2px solid var(--font-hover-color);
+  box-shadow: 0 0 10px var(--font-hover-color);
+}
+
+.contact-form_button {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1rem;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+  border: 2px solid var(--font-color);
+  color: var(--font-color);
+  background-color: rgb(0, 0, 0, 0);
+  position: relative;
+  width: 40%;
+  max-width: 150px;
+  left: 100%;
+  transform: translateX(-100%);
+}
+
+.contact-form_button:hover {
+  background-color: var(--font-hover-color);
+  color: var(--white-color);
+  border: 2px solid var(--font-hover-color);
+}
+
+@media (min-width: 576px) {
+  .contact-headline {
+    top: 4rem;
+    left: 0.5rem;
+    font-size: 4em;
+    letter-spacing: 5px;
+  }
+
+  .contact-title h5 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 1.5rem 0;
+  }
+
+  .contact-title p {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+  .contact-form_name,
+  .contact-form_email,
+  .contact-form_message {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-headline {
+    top: auto;
+    bottom: 15vh;
+    font-size: 8em;
+    right: 5rem;
+    left: auto;
+  }
+
+  .contact-container {
+    max-width: 600px;
+    margin-bottom: 5rem;
+  }
+}

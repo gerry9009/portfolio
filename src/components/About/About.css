@@ -1,0 +1,210 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bg-color);
+  overflow: hidden;
+  padding: 2rem 0;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-headline {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--font-hover-color);
+  opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: default;
+}
+
+.about-greeting {
+  font-size: 1.5em;
+  margin: 4rem 0 1rem;
+  color: var(--font-color);
+  font-weight: 700;
+  width: 90%;
+  letter-spacing: 2px;
+}
+
+.about-describe-container {
+  width: 90%;
+  padding: 1rem 0;
+}
+
+.about-describe-container p {
+  font-size: 1.2rem;
+  color: var(--font-color);
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
+.about-describe-container h5,
+.about-describe-container h4 {
+  font-size: 1.2rem;
+  color: var(--font-hover-color);
+  margin-bottom: 0.5rem;
+}
+
+.about-describe-container ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-describe-container li {
+  font-size: 1.2rem;
+  color: var(--font-color);
+  margin-right: 2rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
+.about button {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 4rem;
+  padding: 0.6rem 1.5rem;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+  border: 2px solid var(--font-color);
+  color: var(--font-color);
+  background-color: rgb(0, 0, 0, 0);
+}
+
+.about button:hover {
+  background-color: var(--font-hover-color);
+  color: var(--white-color);
+  border: 2px solid var(--font-hover-color);
+}
+
+.about-pic-container {
+  width: 30vw;
+  min-width: 150px;
+  max-width: 300px;
+  z-index: 2;
+  box-shadow: 10px 10px 10px rgb(128, 128, 128);
+  position: relative;
+}
+
+.about-pic-layer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--font-color);
+  opacity: 0.3;
+}
+
+.about-pic-container img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 576px) {
+  .about {
+    height: 100vh;
+    margin: 0 1.5rem;
+    justify-content: space-evenly;
+  }
+
+  .about-headline {
+    top: 4rem;
+    left: 0.5rem;
+    font-size: 4em;
+    letter-spacing: 5px;
+  }
+
+  .about-greeting {
+    font-size: 2em;
+    margin: 7rem 0 1rem;
+  }
+
+  .about-describe-container p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  .about-describe-container h4,
+  .about-describe-container h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-describe-container li {
+    font-size: 1.5rem;
+    margin-right: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .about button {
+    margin: 0;
+    padding: 1rem 2rem;
+  }
+
+  .about-pic-container {
+    width: 35vw;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .about {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5rem;
+  }
+
+  .about-headline {
+    top: auto;
+    bottom: 20vh;
+    font-size: 8em;
+    right: 5rem;
+    left: auto;
+  }
+
+  .about-greeting {
+    margin: 0 0 2.5rem;
+    font-size: 2.5rem;
+  }
+  .about-describe-container {
+    padding: 0;
+    margin-right: 1rem;
+  }
+
+  .about-describe-container p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .about-describe-container h4,
+  .about-describe-container h5 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-describe-container li {
+    font-size: 2rem;
+    margin-right: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .about button {
+    position: absolute;
+    bottom: 40vh;
+    padding: 1rem 4rem;
+  }
+
+  .about-pic-container {
+    width: 30vw;
+  }
+}
+@media (min-width: 1200px) {
+}
