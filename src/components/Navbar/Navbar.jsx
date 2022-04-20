@@ -9,7 +9,7 @@ import ScrollLock from "react-scrolllock";
 
 const containerVariants = {
   hidden: {
-    scale: 10,
+    scale: 8,
     x: "calc(50vw - 40px)",
     y: "calc(-50vh - 2.5rem)",
   },

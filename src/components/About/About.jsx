@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./About.css";
 import getRandomKey from "../../constants/getRandomKey";
-import mainpic from "../../assets/profil/portfolio.jpg";
+import mainpic from "../../assets/profil/myprofile.jpg";
 
 import { fadeInAnimation } from "../../constants/animations";
 

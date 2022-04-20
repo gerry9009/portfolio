@@ -18,33 +18,35 @@ export default function Portfolio({ navigation, contentPortfolio, index }) {
 
   return (
     <section className="portfolio" id={navigation} data-nav="portfolio">
-      <div className="portfolio-headings_container">
-        <h3 className="portfolio-heading-num">{number()}</h3>
-        <h2 className="portfolio-heading-title">Portfolio</h2>
+      <div className="portfolio-headings">
+        <h3 className="portfolio-headings_num">{number()}</h3>
+        <h2 className="portfolio-headings_title">Portfolio</h2>
       </div>
-      <div className="portfolio-content_container">
-        <div className="portfolio-content-title">
-          <h4>{contentPortfolio.title}</h4>
+      <div className="portfolio-img">
+        <a href={contentPortfolio.link_webpage} target="_blank">
+          <img className="portfolio-img_pic" src={contentPortfolio.pic} />
+        </a>
+      </div>
+      <div className="portfolio-content">
+        <h4 className="portfolio-content_title">{contentPortfolio.title}</h4>
+        <div className="portfolio-content_description">
+          {contentPortfolio.text}
         </div>
-        <div className="portfolio-description">{contentPortfolio.text}</div>
-        <ul className="portfolio-technologys">{technologys}</ul>
-        <a
-          href={contentPortfolio.link_webpage}
-          target="_blank"
-          className="portfolio-link"
-        >
-          <RiShareCircleFill className="portfolio-icon icon-github" size={30} />
-        </a>
-        <a
-          href={contentPortfolio.link_github}
-          target="_blank"
-          className="portfolio-link"
-        >
-          <RiGithubFill className="portfolio-icon icon-page" size={30} />
-        </a>
-      </div>
-      <div className="portfolio-img_container">
-        <img src={contentPortfolio.pic} />
+        <ul className="portfolio-content_technologys">{technologys}</ul>
+        <div className="portfolio-content_link">
+          <a href={contentPortfolio.link_webpage} target="_blank">
+            <RiShareCircleFill
+              className="portfolio-content_icon icon-github"
+              size={30}
+            />
+          </a>
+          <a href={contentPortfolio.link_github} target="_blank">
+            <RiGithubFill
+              className="portfolio-content_icon icon-page"
+              size={30}
+            />
+          </a>
+        </div>
       </div>
     </section>
   );
