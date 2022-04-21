@@ -47,7 +47,7 @@
   width: 100%;
 }
 
-.contact-title h5 {
+.contact-title_header {
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 2px;
@@ -56,7 +56,12 @@
   margin: 1rem 0;
 }
 
-.contact-title p {
+.header_response {
+  position: relative;
+  top: 100px;
+}
+
+.contact-title_message {
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 2px;
@@ -122,14 +127,14 @@
     letter-spacing: 5px;
   }
 
-  .contact-title h5 {
+  .contact-title_header {
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 2px;
     margin: 1.5rem 0;
   }
 
-  .contact-title p {
+  .contact-title_message {
     font-size: 1.5rem;
     letter-spacing: 2px;
     margin-bottom: 1rem;
@@ -144,8 +149,8 @@
 @media (min-width: 992px) {
   .contact-headline {
     top: auto;
-    bottom: 15vh;
-    font-size: 8em;
+    bottom: 1vh;
+    font-size: 8rem;
     right: 1rem;
     left: auto;
   }

@@ -83,7 +83,7 @@ export default function App() {
             lastYPosition={lastYPosition}
           />
           {PortfoliosSection}
-          <Contact navigation="contact" />
+          <Contact navigation="contact" contentContact={language.contact} />
         </>
       )}
     </div>

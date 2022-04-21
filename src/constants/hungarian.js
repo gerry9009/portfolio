@@ -1,3 +1,9 @@
+import homedesign from "../assets/pics/homedesign.jpg";
+import mastermind from "../assets/pics/mastermind.jpg";
+import randomuser from "../assets/pics/randomuser.jpg";
+import rockpaperscissorslizardspock from "../assets/pics/rockpaperscissorslizardspock.jpg";
+import triviaquiz from "../assets/pics/triviaquiz.jpg";
+
 const hungarian = {
   home: {
     name: "Buglyó Gergő",
@@ -11,53 +17,65 @@ const hungarian = {
     contact: "Kapcsolat",
   },
   about: {
+    heading: "Rólam",
+    greeting: "Hello!",
+    introduction: "Az én nevem Gergő.",
     describe:
-      "I am a frontend developer with experience in HTML, CSS,  JavaScript, React I’m creative web developer.",
-    experience: "I have experience in:",
+      "Webfejlesztő vagyok, aki imád olyan dolgokat létrehozni, amelyek az interneten élnek.",
+    experience: "Íme néhány általam használt technológia:",
     knowledge: ["HTML", "CSS", "Bootstrap", "JavaScript", "React", "Figma"],
   },
   portfolio: {
     landingpage: {
-      title: "Blbabasas",
-      text: "This is a landing page of a Home Design Company with impressive design.",
+      title: "Egyszerű landing page",
+      text: "Ez egy lakberendezési cég főoldala, lenyűgöző dizájnnal.",
       technologies: ["HTML", "CSS"],
       link_webpage: "https://gerry9009.github.io/home-design/",
       link_github: "https://github.com/gerry9009/home-design",
+      pic: homedesign,
     },
     randomuser: {
-      title: "Random User Generator",
-      text: "This is a landing page of a Home Design Company with impressive design.",
-      technologies: ["HTML", "Bootstrap", "JavaScript", "React"],
+      title: "Véletlenszerű felhasználó generátor",
+      text: "Véletlen felhasználó generátor webes alkalmazás számos funkcióval.",
+      technologies: ["HTML", "Bootstrap", "JavaScript", "React", "API"],
       link_webpage: "https://gerry9009.github.io/randomuser-generator/",
       link_github: "https://github.com/gerry9009/randomuser-generator",
+      pic: randomuser,
     },
     rockpaperscissors: {
-      title: "Rock Paper Scissors Lizard Spoke",
-      text: "This is a landing page of a Home Design Company with impressive design.",
+      title: "Kő Papír Olló Gyík Spoke",
+      text: "Ez a klasszikus kő-papír-olló játék kibővített változata.",
       technologies: ["HTML", "CSS", "JavaScript", "React"],
       link_webpage:
         "https://gerry9009.github.io/rock-paper-scissors-lizard-spock/",
       link_github:
         "https://github.com/gerry9009/rock-paper-scissors-lizard-spock",
+      pic: rockpaperscissorslizardspock,
     },
     mastermind: {
-      title: "Mastermind board game",
-      text: "This is a landing page of a Home Design Company with impressive design.",
+      title: "Mastermind",
+      text: "A klasszikus kódfejtő társasjáték megvalósítása egy webes alkalmazásban",
       technologies: ["HTML", "CSS", "JavaScript"],
       link_webpage: "https://gerry9009.github.io/mastermind-game/",
       link_github: "https://github.com/gerry9009/mastermind-game",
+      pic: mastermind,
     },
     triviaquiz: {
-      title: "Trivia quiz API app",
-      text: "This is a landing page of a Home Design Company with impressive design.",
-      technologies: ["HTML", "CSS", "JavaScript", "React"],
+      title: "Kvíz játék",
+      text: "Egyszerű feleletválasztós kvízjáték. Válassz ki egy kategóriát, amelyben játszani szeretnél. Szerezd meg a maximális pontot minden kategóriában.",
+      technologies: ["HTML", "CSS", "JavaScript", "React", "API"],
       link_webpage: "https://gerry9009.github.io/triviaQuizGame/",
       link_github: "https://github.com/gerry9009/triviaQuizGame",
+      pic: triviaquiz,
     },
   },
   contact: {
-    text: "Feel free to send me a message:",
-    form: ["name", "email", "message"],
+    heading: "Kapcsolat",
+    title: "Lépjünk kapcsolatba",
+    text: "Nyugodtan küldj nekem egy üzenetet",
+    responseTitle: "Köszönöm a megkeresésed!",
+    responseText: "Hamarosan felveszem veled a kapcsolatot",
+    form: { name: "név", email: "email", message: "üzenet", send: "küld" },
   },
 };
 

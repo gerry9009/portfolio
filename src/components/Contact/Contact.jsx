@@ -1,12 +1,79 @@
 import React from "react";
 import { RiGithubLine, RiLinkedinFill, RiTwitterFill } from "react-icons/ri";
+import { useForm, ValidationError } from "@formspree/react";
 
 import "./Contact.css";
 
-export default function Contact({ navigation }) {
+export default function Contact({ navigation, contentContact }) {
+  const [state, handleSubmit] = useForm("xwkyrgpp");
+
+  const ContactForm = () => {
+    if (state.succeeded) {
+      return (
+        <div className="contact-title header_response">
+          <h5 className="contact-title_header ">
+            {contentContact.responseTitle}
+          </h5>
+          <p className="contact-title_message">{contentContact.responseText}</p>
+        </div>
+      );
+    } else {
+      return (
+        <>
+          <div className="contact-title">
+            <h5 className="contact-title_header">{contentContact.title}</h5>
+            <p className="contact-title_message">{contentContact.text}</p>
+          </div>
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <input
+              className="contact-form_name"
+              type="text"
+              placeholder={contentContact.form.name}
+              id="name"
+              name="name"
+              required
+            />
+            <input
+              className="contact-form_email"
+              type="email"
+              placeholder={contentContact.form.email}
+              id="email"
+              name="email"
+              required
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+            <textarea
+              className="contact-form_message"
+              placeholder={contentContact.form.message}
+              id="message"
+              name="message"
+              required
+            />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+            <button
+              className="contact-form_button"
+              type="submit"
+              disabled={state.submitting}
+            >
+              {contentContact.form.send}
+            </button>
+          </form>
+        </>
+      );
+    }
+  };
+
   return (
     <section className="contact" id={navigation} data-nav="contact">
-      <h4 className="contact-headline">Contact Me</h4>
+      <h4 className="contact-headline">{contentContact.heading}</h4>
       <div className="contact-container">
         <div className="contact-social">
           <a
@@ -31,30 +98,7 @@ export default function Contact({ navigation }) {
             <RiTwitterFill className="contact-social_icon" size={50} />
           </a>
         </div>
-        <div className="contact-title">
-          <h5>Get in touch</h5>
-          <p>Feel free to send me a message</p>
-        </div>
-        <form className="contact-form" action="#" method="">
-          <input
-            className="contact-form_name"
-            type="text"
-            placeholder="name"
-            required
-          />
-          <input
-            className="contact-form_email"
-            type="email"
-            placeholder="email"
-            required
-          />
-          <textarea
-            className="contact-form_message"
-            placeholder="message"
-            required
-          />
-          <input className="contact-form_button" type="submit" value="Send" />
-        </form>
+        <ContactForm />
       </div>
     </section>
   );

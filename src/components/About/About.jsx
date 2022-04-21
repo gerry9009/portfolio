@@ -9,13 +9,13 @@ export default function About({ contentAbout, lastYPosition, navigation }) {
   const fadeInRight = {
     animationName: "fadeRight",
     axis: "x",
-    from: "-150px",
+    from: "-150px"
   };
 
   const fadeInLeft = {
     animationName: "fadeLeft",
     axis: "x",
-    from: "200px",
+    from: "200px"
   };
 
   useEffect(() => {
@@ -24,20 +24,30 @@ export default function About({ contentAbout, lastYPosition, navigation }) {
   }, [lastYPosition]);
 
   const skills = contentAbout.knowledge.map((skill) => {
-    return <li key={getRandomKey()}>{skill}</li>;
+    return (
+      <li className="about-experienceList" key={getRandomKey()}>
+        {skill}
+      </li>
+    );
   });
 
   return (
     <section id={navigation} className="about" data-nav="about">
-      <h2 className="about-headline">About Me</h2>
-      <div className="about-describe-container" data-animation="fadeRight">
-        <h3 className="about-greeting">Hello!</h3>
-        <h4 className="about-introduce">{contentAbout.greeting}</h4>
-        <p>{contentAbout.describe}</p>
-        <h5>{contentAbout.experience}</h5>
+      <h2 className="about-headings">{contentAbout.heading}</h2>
+      <div className="about-describtion" data-animation="fadeRight">
+        <h3 className="about-describtion_greeting">{contentAbout.greeting}</h3>
+        <h4 className="about-describtion_introduction">
+          {contentAbout.introduction}
+        </h4>
+        <p className="about-describtion_content">{contentAbout.describe}</p>
+        <h5 className="about-describtion_experience">
+          {contentAbout.experience}
+        </h5>
         <ul>{skills}</ul>
       </div>
-      <button>CV</button>
+      <a href="../../assets/cv/CV.pdf" download className="about-cv">
+        <button className="about-btn">CV</button>
+      </a>
       <div className="about-pic-container" data-animation="fadeLeft">
         <img src={mainpic} alt="elegant man" />
         <div className="about-pic-layer"></div>
