@@ -1,21 +1,22 @@
 :root {
-  --black-color: rgb(0, 0, 0);
-  --white-color: rgb(255, 255, 255);
-  --bg-color: #f1f1f1; /*#eaeaea*/
-  --font-color: #0d0d0d; /*#0d0d0d  or      #1a5e63*/
-  --font-hover-color: #4f8d60; /*#d9d9d9*/
-  --gray-color: rgb(153, 153, 153); /*rgb(153, 153, 153)*/
-  --lightgray-color: rgb(216, 216, 216);
+  --main-color: rgb(255, 255, 255);
+  --second-color: rgb(0, 0, 0);
+  --third-color: #4f8d60;
+  --fourth-color: rgb(153, 153, 153);
+  --fifth-color: rgb(216, 216, 216);
 }
 
 * {
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-color: var(--bg-color);
+  background: var(--main-color);
   min-width: 370px;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
 }
 
 /* 

@@ -7,8 +7,8 @@ import triviaquiz from "../assets/pics/triviaquiz.jpg";
 const hungarian = {
   home: {
     name: "Buglyó Gergő",
-    position: "Front-End Fejlesztő",
-    button: "Kapcsolat",
+    position: "Frontend Fejlesztő",
+    button: "Dolgozzunk együtt",
   },
   nav: {
     home: "Főoldal",
@@ -21,13 +21,13 @@ const hungarian = {
     greeting: "Hello!",
     introduction: "Az én nevem Gergő.",
     describe:
-      "Webfejlesztő vagyok, aki imád olyan dolgokat létrehozni, amelyek az interneten élnek.",
+      "Webfejlesztő vagyok, aki szeret hasznos dolgokat létrehozni az internet világába.",
     experience: "Íme néhány általam használt technológia:",
     knowledge: ["HTML", "CSS", "Bootstrap", "JavaScript", "React", "Figma"],
   },
   portfolio: {
     landingpage: {
-      title: "Egyszerű landing page",
+      title: "Egyszerű főoldal",
       text: "Ez egy lakberendezési cég főoldala, lenyűgöző dizájnnal.",
       technologies: ["HTML", "CSS"],
       link_webpage: "https://gerry9009.github.io/home-design/",
@@ -39,7 +39,8 @@ const hungarian = {
       text: "Véletlen felhasználó generátor webes alkalmazás számos funkcióval.",
       technologies: ["HTML", "Bootstrap", "JavaScript", "React", "API"],
       link_webpage: "https://gerry9009.github.io/randomuser-generator/",
-      link_github: "https://github.com/gerry9009/randomuser-generator",
+      link_github:
+        "https://github.com/gerry9009/randomuser-generator/tree/master",
       pic: randomuser,
     },
     rockpaperscissors: {
@@ -49,7 +50,7 @@ const hungarian = {
       link_webpage:
         "https://gerry9009.github.io/rock-paper-scissors-lizard-spock/",
       link_github:
-        "https://github.com/gerry9009/rock-paper-scissors-lizard-spock",
+        "https://github.com/gerry9009/rock-paper-scissors-lizard-spock/tree/master",
       pic: rockpaperscissorslizardspock,
     },
     mastermind: {
@@ -63,7 +64,7 @@ const hungarian = {
     triviaquiz: {
       title: "Kvíz játék",
       text: "Egyszerű feleletválasztós kvízjáték. Válassz ki egy kategóriát, amelyben játszani szeretnél. Szerezd meg a maximális pontot minden kategóriában.",
-      technologies: ["HTML", "CSS", "JavaScript", "React", "API"],
+      technologies: ["HTML", "CSS", "JavaScript", "API"],
       link_webpage: "https://gerry9009.github.io/triviaQuizGame/",
       link_github: "https://github.com/gerry9009/triviaQuizGame",
       pic: triviaquiz,
@@ -71,8 +72,8 @@ const hungarian = {
   },
   contact: {
     heading: "Kapcsolat",
-    title: "Lépjünk kapcsolatba",
-    text: "Nyugodtan küldj nekem egy üzenetet",
+    title: "Vedd fel velem a kapcsolatot",
+    text: "Itt tudsz nekem üzenetet küldeni",
     responseTitle: "Köszönöm a megkeresésed!",
     responseText: "Hamarosan felveszem veled a kapcsolatot",
     form: { name: "név", email: "email", message: "üzenet", send: "küld" },

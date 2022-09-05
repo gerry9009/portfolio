@@ -7,8 +7,8 @@ import triviaquiz from "../assets/pics/triviaquiz.jpg";
 const english = {
   home: {
     name: "Gergő Buglyó",
-    position: "Front-End Developer",
-    button: "Hire Me",
+    position: "Frontend Developer",
+    button: "Work with Me",
   },
   nav: {
     home: "Home",
@@ -39,7 +39,8 @@ const english = {
       text: "Random user generator web application with many features.",
       technologies: ["HTML", "Bootstrap", "JavaScript", "React", "API"],
       link_webpage: "https://gerry9009.github.io/randomuser-generator/",
-      link_github: "https://github.com/gerry9009/randomuser-generator",
+      link_github:
+        "https://github.com/gerry9009/randomuser-generator/tree/master",
       pic: randomuser,
     },
     rockpaperscissors: {
@@ -49,7 +50,7 @@ const english = {
       link_webpage:
         "https://gerry9009.github.io/rock-paper-scissors-lizard-spock/",
       link_github:
-        "https://github.com/gerry9009/rock-paper-scissors-lizard-spock",
+        "https://github.com/gerry9009/rock-paper-scissors-lizard-spock/tree/master",
       pic: rockpaperscissorslizardspock,
     },
     mastermind: {
@@ -63,7 +64,7 @@ const english = {
     triviaquiz: {
       title: "Trivia quiz game",
       text: "Simple multiple-choice quiz game. Choose a category in which to play. Earn the maximum points in each category.",
-      technologies: ["HTML", "CSS", "JavaScript", "React", "API"],
+      technologies: ["HTML", "CSS", "JavaScript", "API"],
       link_webpage: "https://gerry9009.github.io/triviaQuizGame/",
       link_github: "https://github.com/gerry9009/triviaQuizGame",
       pic: triviaquiz,

@@ -1,24 +1,24 @@
-import "./App.css";
+import React from "react";
 import { useState, useEffect } from "react";
+import "./App.css";
 
 import english from "./constants/english";
 import hungarian from "./constants/hungarian";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Navbar from "./components/Navbar/Navbar";
-import Portfolio from "./components/Portfolio/Portfolio";
+import Portfolios from "./components/Portfolios/Portfolios";
 import Contact from "./components/Contact/Contact";
 
-import getRandomKey from "./constants/getRandomKey";
-
-export default function App() {
+const App = () => {
   const [isEnglish, setIsEngilsh] = useState(true);
   const [language, setLanguage] = useState(english);
-  const [lastYPosition, setLastYPosition] = useState(0);
-  const [logoAnimationStatus, setLogoAnimationStatus] = useState(false);
+  const [windowTopPosition, setWindowTopPosition] = useState(0);
+  const [logoAnimationFinished, setLogoAnimationFinished] = useState(false);
 
+  // handle scrolling position -> set window top position
   window.addEventListener("scroll", () => {
-    setLastYPosition(window.pageYOffset);
+    setWindowTopPosition(window.pageYOffset);
   });
 
   const handleEng = () => {
@@ -28,64 +28,38 @@ export default function App() {
     setIsEngilsh(false);
   };
 
-  // handle logoLoaded state when animation is finished
-  const handleAnimationFinished = () => {
-    setLogoAnimationStatus(true);
-  };
-
   useEffect(() => {
     isEnglish ? setLanguage(english) : setLanguage(hungarian);
   }, [isEnglish]);
 
-  const PortfoliosSection = Object.keys(language.portfolio).map(
-    (page, index) => {
-      if (index === 0) {
-        return (
-          <Portfolio
-            navigation="portfolio"
-            contentPortfolio={language.portfolio[page]}
-            index={index}
-            key={getRandomKey()}
-          />
-        );
-      } else {
-        return (
-          <Portfolio
-            contentPortfolio={language.portfolio[page]}
-            index={index}
-            key={getRandomKey()}
-          />
-        );
-      }
-    }
-  );
+  const handleAnimationFinished = () => {
+    setLogoAnimationFinished(!logoAnimationFinished);
+  };
 
   return (
     <div className="App">
       <Navbar
-        contentNavbar={language.nav}
-        lastYPosition={lastYPosition}
+        content={language.nav}
+        windowTopPosition={windowTopPosition}
+        logoAnimationFinished={logoAnimationFinished}
         handleAnimationFinished={handleAnimationFinished}
-        logoAnimationStatus={logoAnimationStatus}
       />
-      {logoAnimationStatus && (
+      {logoAnimationFinished && (
         <>
           <Home
+            content={language.home}
+            navigation="home"
             handleEng={handleEng}
             handleHun={handleHun}
-            contentHome={language.home}
             isEnglish={isEnglish}
-            navigation="home"
           />
-          <About
-            navigation="about"
-            contentAbout={language.about}
-            lastYPosition={lastYPosition}
-          />
-          {PortfoliosSection}
-          <Contact navigation="contact" contentContact={language.contact} />
+          <About content={language.about} navigation="about" />
+          <Portfolios content={language.portfolio} navigation="portfolio" />
+          <Contact content={language.contact} navigation="contact" />
         </>
       )}
     </div>
   );
-}
+};
+
+export default App;
