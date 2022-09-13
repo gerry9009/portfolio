@@ -1,6 +1,5 @@
 .contact {
   font-family: "Poppins", sans-serif;
-  height: 100vh;
   width: 90%;
   margin: auto;
   display: flex;
@@ -11,7 +10,6 @@
 }
 
 .contact-container {
-  max-width: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -20,7 +18,6 @@
 }
 
 .contact-social {
-  margin-top: 6vh;
   width: 50%;
   display: flex;
   justify-content: space-between;
@@ -29,6 +26,8 @@
 .contact-social_icon {
   fill: var(--second-color);
   cursor: pointer;
+  width: 32px;
+  margin-top: 3vh;
 }
 
 .contact-social_icon:hover {
@@ -38,9 +37,8 @@
 .contact-headline {
   margin: 0 auto;
   width: 100%;
-  max-width: 500px;
   position: relative;
-  font-size: 3em;
+  font-size: 1.625rem;
   top: 10%;
   font-weight: 700;
   color: var(--third-color);
@@ -51,15 +49,15 @@
 
 .contact-title {
   width: 100%;
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 
 .contact-title_header {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: var(--third-color);
   text-transform: uppercase;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
 
 .header_response {
@@ -68,7 +66,7 @@
 }
 
 .contact-title_message {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 2px;
   color: var(--second-color);
@@ -125,10 +123,23 @@
 }
 
 @media (min-width: 576px) {
+  .contact-headline {
+    font-size: 2.25rem;
+  }
+
+  .contact-title_header {
+    font-size: 1.625rem;
+  }
+
+  .contact-title_message {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
   .contact-form_name,
   .contact-form_email,
   .contact-form_message {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .contact-form_button {
@@ -138,11 +149,15 @@
 
 @media (min-width: 768px) {
   .contact-headline {
-    max-width: 650px;
+    max-width: 700px;
   }
 
   .contact-container {
-    max-width: 650px;
+    max-width: 700px;
+  }
+
+  .contact-social_icon {
+    width: 36px;
   }
 }
 
@@ -154,7 +169,7 @@
     right: 0;
     left: 0;
     text-align: right;
-    font-size: 7rem;
+    font-size: 5rem;
     max-width: 850px;
     opacity: 0.5;
   }
@@ -162,6 +177,32 @@
   .contact-container {
     max-width: 850px;
     margin-bottom: 10rem;
+  }
+
+  .contact-title_header {
+    font-size: 2rem;
+  }
+
+  .contact-title_message {
+    font-size: 1.625rem;
+  }
+
+  .contact-form_name,
+  .contact-form_email,
+  .contact-form_message {
+    font-size: 1.2rem;
+    margin: 2vh 0;
+  }
+
+  .contact-form_button {
+    font-size: 1.2rem;
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-headline {
+    font-size: 5.5rem;
   }
 
   .contact-title_header {
@@ -175,12 +216,16 @@
   .contact-form_name,
   .contact-form_email,
   .contact-form_message {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 2vh 0;
   }
 
   .contact-form_button {
-    font-size: 1.2rem;
-    max-width: 200px;
+    font-size: 1.5rem;
+    max-width: 250px;
+  }
+
+  .contact-social_icon {
+    width: 40px;
   }
 }

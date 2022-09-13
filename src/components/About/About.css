@@ -1,18 +1,28 @@
 .about {
-  min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
   position: relative;
   width: 90%;
   margin: auto;
+  padding-top: 10vh;
   border-bottom: 1px solid var(--third-color);
   font-family: "Poppins";
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    170deg,
+    var(--main-color) 0%,
+    var(--main-color) 80%,
+    var(--third-color) 100%
+  );
 }
 
 .about-header {
   position: absolute;
   bottom: 0;
   left: 0;
-  font-size: 3.5rem;
+  font-size: 1.625rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--third-color);
@@ -28,7 +38,7 @@
 }
 
 .about-description-greeting {
-  font-size: 2.5rem;
+  font-size: 1.625rem;
   margin-bottom: 1rem;
   color: var(--second-color);
   font-weight: 700;
@@ -37,17 +47,17 @@
 
 .about-description-content {
   color: var(--second-color);
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
-  line-height: 2rem;
+  line-height: 1rem;
 }
 
 .about-description-introduction,
 .about-description-experience {
   color: var(--third-color);
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
-  line-height: 2rem;
+  line-height: 1rem;
 }
 
 .about-experiences {
@@ -60,19 +70,20 @@
 }
 
 .about-experiences-item {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 0.5rem;
   font-style: italic;
 }
 
 .about-cv {
   width: 50px;
-  padding: 1rem 3rem;
-  margin: 3rem auto;
+  padding: 0.5rem 1.5rem;
+  margin: 2rem auto;
   text-align: center;
   text-decoration: none;
   color: var(--second-color);
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 1rem;
   border: 2px solid var(--second-color);
 }
 
@@ -83,62 +94,104 @@
 }
 
 .about-img-container {
-  display: none;
+  width: 50%;
+  display: flex;
+  position: relative;
+  bottom: 0;
+}
+
+.about-img-profile {
+  width: 100%;
 }
 
 @media (min-width: 576px) {
-  .about-header {
-    font-size: 5rem;
-    letter-spacing: 4px;
-  }
-
   .about-description-greeting {
-    font-size: 4rem;
+    font-size: 2rem;
+    letter-spacing: 4px;
     margin-bottom: 2rem;
   }
 
   .about-description-content {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
   }
 
   .about-description-introduction,
   .about-description-experience {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
 
   .about-experiences-item {
-    font-size: 2rem;
+    font-size: 1.25rem;
     margin: 1rem;
+  }
+
+  .about-img-container {
+    width: 45%;
   }
 }
 
 @media (min-width: 768px) {
-  .about-header {
-    font-size: 6rem;
-    letter-spacing: 5px;
-  }
-}
-
-@media (min-width: 992px) {
-  .about-header {
-    font-size: 5rem;
-    letter-spacing: 2px;
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-end;
   }
 
   .about-description {
     width: 50%;
+    margin-bottom: 10vh;
   }
 
   .about-img-container {
-    display: block;
-    position: relative;
-    width: 50%;
+    width: 45%;
+    padding-top: 3vh;
   }
 
   .about-img-profile {
-    position: absolute;
-    width: 110%;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-description-greeting {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-description-content {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .about-description-introduction,
+  .about-description-experience {
+    font-size: 1.5rem;
+  }
+
+  .about-experiences-item {
+    font-size: 1.5rem;
+    margin: 1.25rem;
+  }
+
+  .about-cv {
+    padding: 0.75rem 2.25rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .about-img-container {
+    width: 50%;
+  }
+  .about-img-profile {
+    position: relative;
+    width: 100%;
     max-width: 500px;
     z-index: 2;
     bottom: 0;
@@ -147,7 +200,29 @@
 }
 
 @media (min-width: 1200px) {
-  .about-header {
-    letter-spacing: 20px;
+  .about-description-greeting {
+    font-size: 2.5rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .about-description-content {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+
+  .about-description-introduction,
+  .about-description-experience {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+
+  .about-experiences-item {
+    font-size: 1.75rem;
+    margin: 1.5rem;
+  }
+
+  .about-cv {
+    padding: 1.25rem 3.75rem;
+    font-size: 1.5rem;
   }
 }

@@ -6,3 +6,17 @@
   font-family: "Poppins", sans-serif;
   border-bottom: 1px solid var(--third-color);
 }
+
+@media (min-width: 768px) {
+  .portfolios {
+    padding: 10vh 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolios {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

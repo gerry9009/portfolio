@@ -30,19 +30,19 @@ Change Scrollbar Style
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--white-color);
+  background: var(--main-color);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--gray-color);
-  border: 1px solid var(--gray-color);
+  background: var(--fifth-color);
+  border: 1px solid var(--fifth-color);
   border-radius: 20px;
   height: 20px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--font-hover-color);
-  border: 1px solid var(--font-hover-color);
+  background: var(--second-color);
+  border: 1px solid var(--second-color);
 }

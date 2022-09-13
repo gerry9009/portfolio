@@ -21,14 +21,7 @@ const Navbar = ({
   const controls = useAnimation();
   const controls2 = useAnimation();
 
-  // this useEffect is running when scrolling
-  useEffect(() => {
-    handleStickyMode();
-    handleActiveSection();
-  });
-
-  // set navbar top position
-  // this useEffect is call when the page is loaded
+  // set navbar top position and the sections positions
   useEffect(() => {
     const navbar = document.querySelector(".navbar");
     const navbarTopPosition = navbar.offsetTop;
@@ -36,7 +29,10 @@ const Navbar = ({
 
     const sectionsList = document.querySelectorAll("section");
     setSections(sectionsList);
+  }, [logoAnimationFinished]);
 
+  // this useEffect is call when the page is loaded
+  useEffect(() => {
     // set animation options
     controls.set({
       opacity: 0,
@@ -46,7 +42,7 @@ const Navbar = ({
       opacity: 1,
       pathLength: 1,
       transition: {
-        duration: 4,
+        duration: 2.5,
         ease: "linear",
       },
     });
@@ -63,7 +59,7 @@ const Navbar = ({
       transition: {
         duration: 1.5,
         ease: "easeOut",
-        delay: 3.5,
+        delay: 2,
       },
     });
   }, [controls, controls2]);
@@ -93,26 +89,32 @@ const Navbar = ({
     }
   }, [logoAnimationFinished, controls, controls2]);
 
-  // set navbar sticky mode if navbar top position is equal widow top position
-  const handleStickyMode = () => {
-    windowTopPosition >= navbarPosition
-      ? setNavbarClass("navbar-top")
-      : setNavbarClass("navbar-bottom");
-  };
+  // this useEffect is running when scrolling
+  useEffect(() => {
+    // set navbar sticky mode if navbar top position is equal widow top position
+    const handleStickyMode = () => {
+      windowTopPosition >= navbarPosition
+        ? setNavbarClass("navbar-top")
+        : setNavbarClass("navbar-bottom");
+    };
 
-  //handle highlighting navbar menu's name while scrolling depend on section
-  const handleActiveSection = () => {
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionBottom = section.offsetTop + section.clientHeight;
-      if (
-        windowTopPosition >= sectionTop - 30 &&
-        windowTopPosition <= sectionBottom - 30
-      ) {
-        setActiveSection(section.dataset.navigation);
-      }
-    });
-  };
+    //handle highlighting navbar menu's name while scrolling depend on section
+    const handleActiveSection = () => {
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionBottom = section.offsetTop + section.clientHeight;
+        if (
+          windowTopPosition >= sectionTop - 30 &&
+          windowTopPosition <= sectionBottom - 30
+        ) {
+          setActiveSection(section.dataset.navigation);
+        }
+      });
+    };
+
+    handleStickyMode();
+    handleActiveSection();
+  });
 
   const Logo = () => {
     return (
@@ -199,7 +201,6 @@ const Navbar = ({
   const handleResizeWidth = () => {
     if ((window.innerWidth >= 992) & hamburgerMenuVisibility) {
       toggleHamburgerMenuVisibility();
-      handleActiveSection();
     }
   };
 

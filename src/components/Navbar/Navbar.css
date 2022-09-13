@@ -52,7 +52,7 @@
   display: block;
   padding: 1vh 3vw;
   margin: 0 2vw;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
   text-decoration: none;
@@ -142,5 +142,11 @@
   }
   .navbar-hamburger-menu {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-horizontal-menu a {
+    font-size: 1.5rem;
   }
 }
