@@ -130,21 +130,6 @@
 }
 
 @media (min-width: 768px) {
-  .portfolio {
-  }
-
-  .portfolio-header-number {
-  }
-
-  .portfolio-header-title {
-  }
-
-  .portfolio-title {
-  }
-
-  .portfolio-title-text {
-  }
-
   .portfolio-container {
     position: relative;
     overflow: hidden;
@@ -205,9 +190,6 @@
 }
 
 @media (min-width: 992px) {
-  .portfolio {
-  }
-
   .portfolio-container {
     width: 90%;
   }
@@ -219,10 +201,13 @@
     flex-direction: column;
     justify-content: center;
     width: 43vw;
+    max-width: 800px;
   }
 
   .portfolio-container {
     width: 100%;
+
+    height: 360px;
   }
 }
 

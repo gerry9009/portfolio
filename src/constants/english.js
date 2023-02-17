@@ -3,6 +3,7 @@ import mastermind from "../assets/pics/mastermind.jpg";
 import randomuser from "../assets/pics/randomuser.jpg";
 import rockpaperscissorslizardspock from "../assets/pics/rockpaperscissorslizardspock.jpg";
 import triviaquiz from "../assets/pics/triviaquiz.jpg";
+import skypeclone from "../assets/pics/skypeclone.jpg";
 
 const english = {
   home: {
@@ -68,6 +69,14 @@ const english = {
       link_webpage: "https://gerry9009.github.io/triviaQuizGame/",
       link_github: "https://github.com/gerry9009/triviaQuizGame",
       pic: triviaquiz,
+    },
+    skypeclone: {
+      title: "Skype Clone",
+      text: "You are able to create a connection between two peers via NodeJS server.",
+      technologies: ["React", "NodeJS", "Express", "Simple-peer", "Socket-io"],
+      link_webpage: "https://gerry9009.github.io/webrtc/",
+      link_github: "https://github.com/gerry9009/webrtc",
+      pic: skypeclone,
     },
   },
   contact: {
