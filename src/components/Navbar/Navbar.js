@@ -102,11 +102,8 @@ const Navbar = ({
     const handleActiveSection = () => {
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        const sectionBottom = section.offsetTop + section.clientHeight;
-        if (
-          windowTopPosition >= sectionTop - 30 &&
-          windowTopPosition <= sectionBottom - 30
-        ) {
+        //const sectionBottom = section.offsetTop + section.clientHeight;
+        if (windowTopPosition >= sectionTop - 150) {
           setActiveSection(section.dataset.navigation);
         }
       });
