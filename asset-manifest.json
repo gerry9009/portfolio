@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.bdace504.css",
-    "main.js": "/static/js/main.8f7f1561.js",
+    "main.js": "/static/js/main.c9f76469.js",
+    "static/media/carsrestapi.png": "/static/media/carsrestapi.ad0740459727cf238c78.png",
     "static/media/skypeclone.jpg": "/static/media/skypeclone.aed9cf781ba4c1f4a7d7.jpg",
     "static/media/myprofile2.png": "/static/media/myprofile2.a819abe03e9f5b87165b.png",
     "static/media/randomuser.jpg": "/static/media/randomuser.a1357e1085e9009b5621.jpg",
@@ -11,10 +12,10 @@
     "static/media/triviaquiz.jpg": "/static/media/triviaquiz.c4b9c07ac95be5c96809.jpg",
     "index.html": "/index.html",
     "main.bdace504.css.map": "/static/css/main.bdace504.css.map",
-    "main.8f7f1561.js.map": "/static/js/main.8f7f1561.js.map"
+    "main.c9f76469.js.map": "/static/js/main.c9f76469.js.map"
   },
   "entrypoints": [
     "static/css/main.bdace504.css",
-    "static/js/main.8f7f1561.js"
+    "static/js/main.c9f76469.js"
   ]
 }
