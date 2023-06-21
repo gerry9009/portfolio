@@ -4,6 +4,7 @@ import randomuser from "../assets/pics/randomuser.jpg";
 import rockpaperscissorslizardspock from "../assets/pics/rockpaperscissorslizardspock.jpg";
 import triviaquiz from "../assets/pics/triviaquiz.jpg";
 import skypeclone from "../assets/pics/skypeclone.jpg";
+import carsrestapi from "../assets/pics/carsrestapi.png";
 
 const hungarian = {
   home: {
@@ -65,7 +66,7 @@ const hungarian = {
     triviaquiz: {
       title: "Kvíz játék",
       text: "Egyszerű feleletválasztós kvízjáték. Válassz ki egy kategóriát, amelyben játszani szeretnél. Szerezd meg a maximális pontot minden kategóriában.",
-      technologies: ["HTML", "CSS", "JavaScript", "API"],
+      technologies: ["React", "TailwindCSS", "TypeScript", "API"],
       link_webpage: "https://gerry9009.github.io/triviaQuizGame/",
       link_github: "https://github.com/gerry9009/triviaQuizGame",
       pic: triviaquiz,
@@ -77,6 +78,14 @@ const hungarian = {
       link_webpage: "https://gerry9009.github.io/webrtc/",
       link_github: "https://github.com/gerry9009/webrtc",
       pic: skypeclone,
+    },
+    restapi: {
+      title: "Car RestAPI",
+      text: "Ez a portfólió projekt bemutatja egy alap Node.js REST API fejlesztését autóadatok kezelésére.A projekt végpontokat biztosít az autóinformációk lekérdezéséhez, hozzáadásához, frissítéséhez és törléséhez, valamint különböző szűrési lehetőségeket is kínál.",
+      technologies: ["NodeJS", "Express", "MongoDB"],
+      link_webpage: "https://github.com/gerry9009/cars-rest-api",
+      link_github: "https://github.com/gerry9009/cars-rest-api",
+      pic: carsrestapi,
     },
   },
   contact: {

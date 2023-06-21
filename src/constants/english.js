@@ -4,6 +4,7 @@ import randomuser from "../assets/pics/randomuser.jpg";
 import rockpaperscissorslizardspock from "../assets/pics/rockpaperscissorslizardspock.jpg";
 import triviaquiz from "../assets/pics/triviaquiz.jpg";
 import skypeclone from "../assets/pics/skypeclone.jpg";
+import carsrestapi from "../assets/pics/carsrestapi.png";
 
 const english = {
   home: {
@@ -65,7 +66,7 @@ const english = {
     triviaquiz: {
       title: "Trivia quiz game",
       text: "Simple multiple-choice quiz game. Choose a category in which to play. Earn the maximum points in each category.",
-      technologies: ["HTML", "CSS", "JavaScript", "API"],
+      technologies: ["React", "TailwindCSS", "TypeScript", "API"],
       link_webpage: "https://gerry9009.github.io/triviaQuizGame/",
       link_github: "https://github.com/gerry9009/triviaQuizGame",
       pic: triviaquiz,
@@ -77,6 +78,14 @@ const english = {
       link_webpage: "https://gerry9009.github.io/webrtc/",
       link_github: "https://github.com/gerry9009/webrtc",
       pic: skypeclone,
+    },
+    restapi: {
+      title: "Car RestAPI",
+      text: "This portfolio project showcases the development of a basic Node.js REST API for managing car data. The project provides endpoints for retrieving, adding, updating, and deleting car information, along with various filtering options.",
+      technologies: ["NodeJS", "Express", "MongoDB"],
+      link_webpage: "https://github.com/gerry9009/cars-rest-api",
+      link_github: "https://github.com/gerry9009/cars-rest-api",
+      pic: carsrestapi,
     },
   },
   contact: {
