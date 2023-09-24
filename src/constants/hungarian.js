@@ -25,7 +25,19 @@ const hungarian = {
     describe:
       "Webfejlesztő vagyok, aki szeret hasznos dolgokat létrehozni az internet világába.",
     experience: "Íme néhány általam használt technológia:",
-    knowledge: ["HTML", "CSS", "Bootstrap", "JavaScript", "React", "Figma"],
+    knowledge: [
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Tailwind CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Redux",
+      "NodeJS",
+      "Express",
+      "Figma",
+    ],
   },
   portfolio: {
     landingpage: {

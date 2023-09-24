@@ -119,11 +119,12 @@
   .about-description-introduction,
   .about-description-experience {
     font-size: 1.25rem;
+    line-height: 2rem;
   }
 
   .about-experiences-item {
     font-size: 1.25rem;
-    margin: 1rem;
+    margin: 0.5rem;
   }
 
   .about-img-container {
@@ -177,7 +178,6 @@
 
   .about-experiences-item {
     font-size: 1.5rem;
-    margin: 1.25rem;
   }
 
   .about-cv {
@@ -207,18 +207,18 @@
 
   .about-description-content {
     font-size: 1.75rem;
-    line-height: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .about-description-introduction,
   .about-description-experience {
     font-size: 1.75rem;
-    line-height: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .about-experiences-item {
     font-size: 1.75rem;
-    margin: 1.5rem;
+    margin: 0.75rem;
   }
 
   .about-cv {

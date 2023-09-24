@@ -25,7 +25,19 @@ const english = {
     describe:
       "I’m a web developer who loves creating things that live on the internet.",
     experience: "Here are some of the technologies I use:",
-    knowledge: ["HTML", "CSS", "Bootstrap", "JavaScript", "React", "Figma"],
+    knowledge: [
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Tailwind CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Redux",
+      "NodeJS",
+      "Express",
+      "Figma",
+    ],
   },
   portfolio: {
     landingpage: {
